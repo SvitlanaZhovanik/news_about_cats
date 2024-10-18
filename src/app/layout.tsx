@@ -25,8 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} ${emilysCandy.variable} antialiased`}>
-        {children}
+      <body className={`${lato.variable} ${emilysCandy.variable} `}>
+        <main className="flex min-h-screen flex-col">{children}</main>
       </body>
     </html>
   );

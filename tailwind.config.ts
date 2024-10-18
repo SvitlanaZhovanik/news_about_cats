@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss';
+import typography from '@tailwindcss/typography';
+import flowbite from 'flowbite/plugin';
 
 const config: Config = {
   content: [
@@ -32,8 +34,9 @@ const config: Config = {
         lato: 'var(--font-lato)',
         emilysCandy: 'var(--font-emilys-candy)',
       },
+      plugins: [typography, flowbite],
     },
   },
-  plugins: [],
 };
+
 export default config;
