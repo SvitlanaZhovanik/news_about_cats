@@ -1,14 +1,16 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import './globals.css';
+import '@/styles/globals.css';
+import { Header } from '@/layout/header/Header';
+import { Footer } from '@/layout/footer/Footer';
 
 const lato = localFont({
-  src: './fonts/Lato-Regular.woff',
+  src: '../../public/fonts/Lato-Regular.woff',
   variable: '--font-lato',
   weight: '400',
 });
 const emilysCandy = localFont({
-  src: './fonts/EmilysCandy-Regular.woff',
+  src: '../../public/fonts/EmilysCandy-Regular.woff',
   variable: '--font-emilys-candy',
   weight: '400',
 });
@@ -26,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.variable} ${emilysCandy.variable} `}>
-        <main className="flex min-h-screen flex-col">{children}</main>
+        <Header />
+        <main className="flex min-h-[90vh] flex-col">{children}</main>
+        <Footer />
       </body>
     </html>
   );

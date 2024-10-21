@@ -7,13 +7,14 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
       sm: '480px',
       md: '768px',
       mdOnly: { min: '768px', max: '1279px' },
-      smOnly: { min: '0px', max: '767px' },
+      smOnly: { max: '767px' },
       xl: '1280px',
       notXl: { max: '1279px' },
     },
@@ -21,6 +22,11 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        lightGreen: '#D4CF6D',
+        deepGreen: '#567A04',
+        lavender: '#D7A3B6',
+        purple: '#9783A9',
+        deepPurple: '#54387F',
       },
       container: {
         center: true,
@@ -28,6 +34,7 @@ const config: Config = {
           DEFAULT: '1.25rem',
           sm: '1.25rem',
           md: '2rem',
+          xl: '2rem',
         },
       },
       fontFamily: {
