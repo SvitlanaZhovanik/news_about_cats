@@ -22,3 +22,34 @@ body {
 
 @layer utilities {
 }
+.paw-1 {
+  animation: walk 4s linear infinite;
+}
+.paw-2,
+.paw-6 {
+  animation: walk 4s linear infinite;
+  animation-delay: 1s;
+}
+.paw-3,
+.paw-7 {
+  animation: walk 4s linear infinite;
+  animation-delay: 2s;
+}
+.paw-4,
+.paw-8 {
+  animation: walk 4s linear infinite;
+  animation-delay: 3s;
+}
+.paw-5 {
+  animation: walk 4s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes walk {
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}

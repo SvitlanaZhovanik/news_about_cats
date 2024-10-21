@@ -4,7 +4,7 @@ import { Logo } from '@/components/logo/Logo';
 
 export const Header = () => {
   return (
-    <header className="bg-lightGreen text-white py-4 opacity-60 md:py-8 dark:bg-deepPurple">
+    <header className="bg-lightGreen text-white py-4 opacity-60 md:py-8 dark:bg-deepPurple dark:opacity-100">
       <div className="container flex justify-between">
         <Logo />
         <Link
