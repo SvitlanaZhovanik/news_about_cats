@@ -1,6 +1,7 @@
 export interface ICardProps {
   title: string;
   description: string;
-  image?: string;
-  href: string;
+  enclosureUrl?: string;
+  link: string;
+  enclosureType?: string;
 }

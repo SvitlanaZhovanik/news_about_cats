@@ -1,11 +1,11 @@
-import { Card } from '@/components/card/Card';
 import { Hero } from '@/sections/hero/Hero';
+import { News } from '@/sections/news/News';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Card title="Title" description="Description" href="/news" />
+      <News />
     </>
   );
 }

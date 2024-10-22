@@ -35,6 +35,7 @@ export const Hero = () => {
           alt="Cat hero"
           width={453}
           height={600}
+          priority
           className=" md:grow smOnly:ml-auto sm:w-[300px] md:w-[430px] xl:max-w-[453px]"
         />
       </div>
