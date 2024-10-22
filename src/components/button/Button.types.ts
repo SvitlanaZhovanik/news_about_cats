@@ -1,6 +1,11 @@
-export interface IButtonProps {
-  children: React.ReactNode;
-  href?: string;
-  onClick?: () => void;
-  className?: string;
-}
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
+
+export type ButtonProps =
+  | (AnchorHTMLAttributes<HTMLAnchorElement> & { href: string } & {
+      children: React.ReactNode;
+      className?: string;
+    })
+  | (ButtonHTMLAttributes<HTMLButtonElement> & { href?: undefined } & {
+      children: React.ReactNode;
+      className?: string;
+    });

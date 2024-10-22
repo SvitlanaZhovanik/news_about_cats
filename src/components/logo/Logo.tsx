@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react';
 import { ILogoProps } from './Logo.types';
+import data from '@/data/main.json';
 import clsx from 'clsx';
 
 export const Logo: FC<ILogoProps> = ({ className }) => {
@@ -12,7 +13,7 @@ export const Logo: FC<ILogoProps> = ({ className }) => {
         className,
       )}
     >
-      Cat&apos;s news
+      {data.logo}
     </Link>
   );
 };

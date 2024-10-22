@@ -1,4 +1,5 @@
 import { Logo } from '@/components/logo/Logo';
+import data from '@/data/common.json';
 
 export const Footer = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer = () => {
         <Logo className="hover:text-lightGreen focus:text-lightGreen smOnly:mb-5" />
         <p className="text-sm md:text-base">
           &copy;
-          {`${new Date().getFullYear()} Cat's news. All rights reserved.`}
+          {`${new Date().getFullYear()} ${data.footer.rights}`}
         </p>
       </div>
     </footer>

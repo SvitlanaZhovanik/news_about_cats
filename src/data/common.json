@@ -1,0 +1,10 @@
+{
+    "title": "Cat's news App",
+    "description": "This is test app for cat's news",
+    "header": {
+        "ariaLabel": "Link to login page"
+    },
+    "footer": {
+        "rights": "Cat's news. All rights reserved."
+    }
+}

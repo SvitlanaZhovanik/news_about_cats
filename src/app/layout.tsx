@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '@/styles/globals.css';
+import data from '@/data/common.json';
 import { Header } from '@/layout/header/Header';
 import { Footer } from '@/layout/footer/Footer';
 
@@ -16,8 +17,8 @@ const emilysCandy = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cat's news App",
-  description: 'This is test app for cats news',
+  title: data.title,
+  description: data.description,
 };
 
 export default function RootLayout({
