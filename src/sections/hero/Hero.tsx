@@ -1,6 +1,18 @@
 import Image from 'next/image';
 import Paw from '@/../public/images/paw.svg';
 import { Button } from '@/components/button/Button';
+import { clsx } from 'clsx';
+
+const positionPaws = [
+  'rotate-[80deg] left-[0px] top-5',
+  'rotate-[110deg] left-[80px] top-[70px]',
+  'rotate-[95deg] left-[170px] top-5',
+  'rotate-[120deg] left-[230px] top-20',
+  'rotate-[80deg] left-[320px] top-10',
+  'rotate-[65deg] left-[400px] top-[85px]',
+  'rotate-[75deg] left-[480px] top-15',
+  'rotate-[85deg] left-[570px] top-[55px]',
+];
 
 export const Hero = () => {
   return (
@@ -14,14 +26,13 @@ export const Hero = () => {
             The best place to find the latest news about cats.
           </p>
           <div className="hidden xl:block xl:relative w-full h-[200px]">
-            <Paw className="paw-1 rotate-[80deg] absolute w-10 h-10 left-[0px] top-5 opacity-0" />
-            <Paw className="paw-2 rotate-[110deg] absolute w-10 h-10 left-[80px] top-[70px] opacity-0" />
-            <Paw className="paw-3 rotate-[95deg] absolute w-10 h-10 left-[170px] top-5 opacity-0" />
-            <Paw className="paw-4 rotate-[120deg] absolute w-10 h-10 left-[230px] top-20 opacity-0" />
-            <Paw className="paw-5 rotate-[80deg] absolute w-10 h-10 left-[320px] top-10 opacity-0" />
-            <Paw className="paw-6 rotate-[65deg] absolute w-10 h-10 left-[400px] top-[85px] opacity-0" />
-            <Paw className="paw-7 rotate-[75deg] absolute w-10 h-10 left-[480px] top-15 opacity-0" />
-            <Paw className="paw-8 rotate-[85deg] absolute w-10 h-10 left-[570px] top-[55px] opacity-0" />
+            {positionPaws.map((paw, index) => (
+              <Paw
+                key={index}
+                id={`paw-${index + 1}`}
+                className={clsx(`absolute w-10 h-10 opacity-0`, paw)}
+              />
+            ))}
           </div>
           <Button
             href="login"

@@ -1,7 +1,7 @@
 import React, { ForwardedRef, forwardRef } from 'react';
 
 import clsx from 'clsx';
-import { ErrorMessage } from '@/components/form/errorMessage/ErrorMessage';
+import { ErrorMessage } from '@/components/formComponents/errorMessage/ErrorMessage';
 import { TextAreaProps } from './TextArea.tupes';
 
 export const TextArea = forwardRef(

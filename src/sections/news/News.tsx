@@ -2,7 +2,14 @@ import { CardsList } from '@/components/cardsList/CardsList';
 import baseApi from '@/utils/baseApi';
 
 export const News = async () => {
-  const { data } = await baseApi.get('/api/article');
+  let data;
+  try {
+    const response = await baseApi.get('/api/article');
+    return (data = response.data ? response.data : []);
+  } catch (error) {
+    console.error('Failed to fetch news data:', error);
+  }
+
   const news = data?.data;
 
   return (
