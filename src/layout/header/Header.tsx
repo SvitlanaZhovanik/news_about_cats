@@ -14,7 +14,7 @@ export const Header = () => {
           className="inline-flex items-center"
           aria-label={data.header.ariaLabel}
         >
-          <Profile className="w-7 h-7 md:w-10 md:h-10 text-white hover:text-deepGreen focus:text-deepGreen duration-300" />
+          <Profile className="w-7 h-7 md:w-10 md:h-10 text-white hover:text-deepGreen focus:text-deepGreen duration-300 dark:hover:text-purple dark:focus:text-purple" />
         </Link>
       </div>
     </header>

@@ -27,14 +27,20 @@ export const AuthForm: FC = () => {
       <div className="grid w-full grid-cols-1 gap-6">
         <Label labelText={'Email address'} className="text-left">
           <Input
-            {...register('email')}
+            {...register('email', {
+              required: 'Email is required',
+              pattern: { value: /^\S+@\S+$/i, message: 'Invalid email' },
+            })}
             error={errors.email?.message}
             placeholder="john@example.com"
           />
         </Label>
         <Label labelText="Password" className="text-left">
           <Input
-            {...register('password')}
+            {...register('password', {
+              required: 'Password is required',
+              minLength: { value: 8, message: 'Password is too short' },
+            })}
             error={errors.password?.message}
             placeholder="********"
             type="password"

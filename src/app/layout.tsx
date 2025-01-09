@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${lato.variable} ${emilysCandy.variable} `}>
         <Header />
-        <main className="flex min-h-[90vh] flex-col">{children}</main>
+        <main className="flex min-h-[81dvh] flex-col">{children}</main>
         <Footer />
       </body>
     </html>

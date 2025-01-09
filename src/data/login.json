@@ -1,0 +1,6 @@
+{
+    "title": "Login",
+    "text": "Don't have an account?",
+    "link": "Create an account",
+    "linkTo": "/register"
+}
