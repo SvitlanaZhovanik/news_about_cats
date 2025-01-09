@@ -1,0 +1,6 @@
+{
+    "title": "Registration",
+    "text": "Do you have profile?",
+    "link": "Login",
+    "linkTo": "/login"
+}
